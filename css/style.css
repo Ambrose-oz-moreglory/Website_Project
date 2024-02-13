@@ -1,0 +1,1022 @@
+/* Default Settings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+li {
+    list-style-type: none;
+}
+
+.cta {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    padding: 0.35rem 1.2rem;
+    font-size: 1.25rem;
+    border: 0.15rem solid #ffffff;
+    border-radius: 5px;
+    background-color: #2426aa;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+/* ------------------------------------------------------- */
+
+/* CSS for Header including Navigation */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    /* background-color: #ffffff; */
+    background-color: #08c615;
+    box-shadow: 5px 10px 18px rgb(242, 255, 0);
+    z-index: 99999;
+    align-items: center;
+}
+
+
+
+.wordmark {
+    width: 25%;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3408c6;
+}
+
+.wordmark a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav {
+    width: 75%;
+    padding: 1rem;
+}
+
+.main-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-li {
+    padding: 0 2rem;
+}
+
+.main-li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+.main-li a:hover {
+    border-bottom: 2px solid #0000ff;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* CSS for Footer */
+
+footer {
+    width: 100%;
+    background-color: #08c615;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+.centre {
+    text-align: center;
+}
+
+.sitemap, .social, .contact {
+    width: calc(100% /3);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.sitemap, .contact {
+    flex-direction: column;
+}
+
+.social {
+    flex-direction: row;
+}
+
+.fab {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    color: #ffffff;
+}
+
+.fa-facebook-square:hover {
+    color: #4267B2;
+}
+
+.fa-twitter-square:hover {
+    color: #38A1F3;
+}
+
+.fa-instagram-square:hover {
+    color: #405de6;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+
+}
+
+
+.footer-li {
+    width: 100px;
+    text-align: center;
+}
+
+.footer-li a { 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 0.10rem 0;;
+}
+
+.footer-li:hover {
+    border-left: 2px solid #0000ff;    
+    border-right: 2px solid #0000ff;
+}
+
+.footer-header {
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+.footer-text {
+    font-size: 0.75rem;
+
+}
+
+.color {
+
+    color: #3408c6;
+    
+
+}
+
+.padding {
+
+    padding-top: 20px;
+}
+
+/* ----------------------------------------------------------- */
+
+/* CSS for index.html */
+.hero-section {
+  background: url('https://images.pexels.com/photos/18687550/pexels-photo-18687550/free-photo-of-a-walkway-with-plants-and-flowers-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3408c6;
+
+  /* Animation */
+  animation: flipBackground 30s infinite;
+  
+}
+
+
+/* Keyframes for background flipping */
+@keyframes flipBackground {
+  0% {
+    background: url('https://images.pexels.com/photos/18687550/pexels-photo-18687550/free-photo-of-a-walkway-with-plants-and-flowers-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+  }
+  25% {
+    background: url('../images/photo-3.jpg') no-repeat center center/cover;
+  }
+  50% {
+    background: url('../images/photo-2.jpg') no-repeat center center/cover;
+  }
+  75% {
+    background: url('../images/street-map.png') no-repeat center center/cover;
+  }
+  100% {
+    background: url('../images/photo-4.jpg') no-repeat center center/cover;
+  }
+}
+
+.paragraph {
+
+ text-align: center;
+ 
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+
+#rcorners1 {
+  
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.explore-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 40px; /* Adjust padding to control the size of the circle */
+  border-radius: 50%; /* This creates the circle shape */
+  background-color: #4CAF50; /* Background color */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.explore-button:hover {
+  background-color: #3408c6; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+.vamp {
+  color: #3408c6;
+  /* padding-bottom: 12px; */
+  
+  text-shadow:0px 0px 0 rgb(137,156,213),1px 1px 0 
+  rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+}
+
+.business-hours-container {
+
+  top: 100px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+  margin: auto;
+}
+
+.header-1 h1, .footer-page p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #e0e0e0;
+}
+
+.alert {
+  background-color: #00c853;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+ 
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+
+tr {
+
+
+  font-weight: bold;
+  
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.today {
+  background-color: #e0e0e0;
+}
+
+.footer-page {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+/* end CSS for index.html */
+
+/* CSS for cafe.htm */
+
+.flip-cards-container {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* This allows the cards to wrap onto the next line */
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 20px;
+    
+    
+}
+
+
+h1, h3 {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  flex: 0 1 calc(25% - 20px);
+  width: 300px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  height: 300px;
+  perspective: 1000px;
+  border: 3px solid #73AD21; /* add recently */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back  {
+  background-color: #7a2827;  
+  color: white;
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-img {
+  width: 370px;
+  height: 295px;
+}
+
+
+.text-block {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-family: arial;
+  text-align: center;
+}
+
+.text-block > h1 {
+    font-size: 15px;
+    text-align:center;
+}
+
+.text-block > button {
+    margin-top: 10%;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.price {
+    padding-top: 5%;
+    color: grey;
+    font-size: 15px;
+    text-align: center;
+
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    opacity: 0.7;
+  }
+  
+/* -------------------------------------------------------------- */
+
+/* CSS for park.htm */
+
+#regions {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/street-map.png);
+    background-position: right 6% center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+
+.region-header {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 4rem;
+    color: #2426aa;
+}
+
+.region-text {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    width: 515px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.region-text.garamond {
+    top: 80%;
+    font-size: 2rem;
+    color: rgb(255, 123, 0);
+}
+
+
+.moving-text {
+    width: 60%;
+    position: relative;
+    animation: slideInFromLeft 2s ease-out forwards;
+
+  }
+
+.moving-text-1 {
+  margin-top: 1px;
+  position: relative;
+  animation: slideInFromLeft 2s ease-out forwards;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      left: -100%;
+      opacity: 3;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+
+
+  }
+
+
+.regions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    /* background-color: rgb(228, 228, 228); */
+}
+
+ /* start ZOOM image code */
+.region-image img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.zoom-container img {
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.3s ease;
+    
+}
+
+.close-button {
+    position: absolute;
+    /* top: 10px; */
+    right: 10px;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 60%; /* may require vendor prefixes */
+    background: rgb(234, 234, 226);
+    
+}
+ /* end code */
+
+.region {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.region-image, .region-content {
+    width: 50%;
+    padding: 1rem;
+}
+
+.region-image img {
+    width: 100%;
+    box-shadow: 5px 10px 5px rgba(0,0,0,.5);
+   
+}
+
+
+.region-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4.region-title {
+
+    text-transform: capitalize;
+}
+
+.region-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2426aa;
+    
+}
+
+.region-desc {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------------------- */
+
+/* CSS for about.htm */
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+.wrapper{
+  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #cfebb7;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  /* line-height: 20px;  before*/
+  line-height: 4px; /* after removing the tag <p> */
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #000000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 26px;
+  margin-top: 50px;
+  padding: 15px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+  
+  @media screen and (max-width: 650px) {
+    .wrapper {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /*about */
+  .content-container {
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+
+}
+
+.image-container img {
+
+    border-radius: 50%;
+} 
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block; /* This ensures no extra space below the image */
+     
+}
+
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px; /* Add some space between the image and text */
+}
+
+.text-container h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    text-decoration: underline solid red 10%; 
+    text-underline-offset: 10px; /* Controls the spacing between the text and the underline */ 
+}
+
+.text-container p {
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* Responsive design to stack on smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-container, .text-container {
+        max-width: 100%;
+    }
+
+    .text-container {
+        padding-left: 0;
+    }
+}
+
+
+ /*footer-text color padding bold */
+.bold {
+
+    font-weight: bold;
+}
+
+  
+  /* ------------------------------------------------------------- */
+
+
+  /* CSS for contact.htm */
+
+ 
+
+a {
+  text-decoration: none;
+}
+
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+:root {
+    --ff-montserrat: 'Montserrat', sans-serif;
+  }
+
+.title-1 {
+  text-align: center;
+  font-family: var(--ff-montserrat), sans-serif;
+  font-size: 4vmin;
+}
+
+h1.font-color {
+    text-decoration: underline;
+    text-decoration-color: red; /* Ensures only <h1> elements with 'font-color' class have a red underline */
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+
+    
+}
+
+#contact {
+  width: 80%;
+  border: 4px solid #fb036b; 
+  padding: 20px; /* Adds padding inside the border for spacing */
+  background-color: #f4eded;
+  
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+      padding: 10px; /* Reduces padding for smaller screens */
+      margin: 10px 0; /* Adjusts outer spacing to better fit narrow viewports */
+      border-width: 2px; /* Optionally adjust the border thickness for a more subtle appearance */
+    }
+  }
+  
+
+.contact_us {
+  margin-top: 3rem;
+  display: flex;
+  font-family: 'Allura', cursive;
+  
+}
+
+form {
+  width: 50%;
+}
+
+.cbox {
+  width: 45%;
+  margin-left: 70px;
+  padding: 10px 30px;
+}
+
+.cbox-message {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.cbox-line {
+    width: 95%;
+    height: 0.2em;
+    background-color: #fb036b;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    
+
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .cbox-line {
+      width: 100%; /* Adjust the width to take the full container width */
+      margin-bottom: 1.5em; /* Adjust the bottom margin */
+      margin-top: 0.5em; /* Adjust the top margin */
+    }
+  }
+
+.c_boxx a p {
+  color: white;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 1rem;
+  padding: 0px 40px;
+}
+
+.c_boxx a {
+  padding: 1em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  border: 0.1em solid #fc036b;
+  background-color: #fc036b;
+  color: white;
+  display: flex;
+  border-radius: 2em;
+  align-items: center;
+  border: #fc036b 0.1em solid;
+  font-size: 1em;
+}
+
+.c_boxx a:hover {
+  background-color: white;
+  color: #fc036b;
+  transition: all 0.5s ease;
+}
+
+.c_boxx i {
+  font-size: 38px;
+  margin-right: 10px;
+  /* margin-left: 0.5em; */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .cbox {
+    width: 100%; /* Adjusts the width to take the full viewport width */
+    margin-left: 0; /* Removes the left margin */
+    padding: 10px 15px; /* Adjusts the padding for a tighter fit */
+  }
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 0px 0px 7px 6px;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #fc036b;
+  color: whitesmoke;
+  padding: 12px 50px;
+  border: 2px solid #fc036b;
+  border-radius: 100vmax;
+  cursor: pointer;
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-links-btns);
+}
+
+input[type="submit"]:hover {
+  background-color: whitesmoke;
+  color: #fc036b;
+}
+
+.cform {
+  background-color: #222;
+  padding: 1em;
+  border-radius: 0.5rem;
+}
+
+.ccol {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.crow-in {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.crow-message {
+  margin: 1rem;
+}
+
+.ccol-left {
+  margin: 1em;
+}
+
+.ccol {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+#name, #email {
+  width: 90%;
+  margin: 1em;
+}
+
+
+.crow:after,
+.crow-s::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.crow-s {
+  margin: 1em;
+  color: #fc036b;
+}
+
+.color-h1 {
+    color: #ffffff; /* Sets the text color to white */
+    font-size: 24px; /* Sets the font size to 24 pixels */
+    font-family: 'Roboto', sans-serif; /* Sets the font family to Roboto, 
+    with a fallback to any available sans-serif font */
+}
+
+
