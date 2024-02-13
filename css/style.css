@@ -834,7 +834,6 @@ h1.font-color {
   border: 4px solid #fb036b; 
   padding: 20px; /* Adds padding inside the border for spacing */
   background-color: #f4eded;
-  margin: auto;
   
 }
 
@@ -843,6 +842,7 @@ h1.font-color {
       padding: 10px; /* Reduces padding for smaller screens */
       margin: 10px 0; /* Adjusts outer spacing to better fit narrow viewports */
       border-width: 2px; /* Optionally adjust the border thickness for a more subtle appearance */
+      margin: auto;
     }
   }
   
