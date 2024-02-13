@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="author" content="Ambrose Ozumba">
+    <meta name="description" content="Visitor attraction">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3830352c3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wordmark garamond vamp"><a href="index.html">Colletta Atlanta</a></div>
+        <nav class="main-nav">
+            <ul class="main-ul">
+                <li class="main-li"><a href="index.html">Home</a></li>
+                <li class="main-li"><a href="shop.html">Shop</a></li>
+                <li class="main-li"><a href="cafe.html">Cafe</a></li>
+                <!-- <li class="main-li"><a href="park.html">Park</a></li> -->
+                <li class="main-li"><a href="contact.html">Contact</a></li> 
+                <li class="main-li"><a href="about.html">About</a></li>        
+            </ul>
+        </nav>
+    </header>
+    <main id="regions">
+        <h1 class="region-header moving-text vamp">Tour The Play Park</h1>
+        <p class="region-text">The Colletta Atlanta Park Resort Center offers a variety of activities for all ages, 
+            including hiking, biking, canoeing, paddleboarding, fishing, rock climbing, and zip-lining. 
+            There's also an eco-friendly playground and a water park for families and children to enjoy.</p>
+        <p class="region-text garamond moving-text">An adventure-filled world awaits.</p>   
+    </main>
+    <section class="regions">
+        <div class="region">
+            <div class="region-image" onclick="zoomImage(this)">
+                <img src="images/swing.jpg" height="400" width="400" alt="Dumfries and Galloway">
+            </div>
+           <!-- Zoom container (hidden by default) -->
+            <div id="zoomContainer" class="zoom-container" style="display: none;">
+                <span class="close-button" onclick="closeZoom()">&times;</span>
+                <img id="zoomedImage" src="" alt="Zoomed Image">
+            </div>
+                        <div class="region-content">
+                <h4 class="region-title moving-text">swing session</h4>
+                <p class="region-desc" id="rcorners1">
+                    The image captures a contemplative child seated on a swing at a playground, facing away from the camera. 
+                    The swing is attached to a structure with vividly painted chains and bars, predominantly red, 
+                    contrasting with the blurred greenery of the background. 
+                    The child's relaxed pose and the wild curls of hair suggest movement and a gentle breeze. 
+                </p>
+            </div>
+        </div>
+        <div class="region">       
+            <div class="region-content">
+                <h4 class="region-title moving-text">skateboard area</h4>
+                <p class="region-desc" id="rcorners1">
+                    The image shows a close-up of two skateboards lying on a surface with distinct white and green lines, 
+                    which suggest it could be a sports court. One skateboard is yellow, the other is light blue, both with orange wheels. 
+                    On the right side of the frame, there's a person lying on the ground, with only their lower half visible. 
+                    They're wearing light brown or beige pants and black sneakers. 
+                    The positioning of the person and skateboards suggests they may have had a fall while skateboarding.
+                </p>
+            </div>
+            <div class="region-image" onclick="zoomImage(this)">
+                <img src="images/photo-2.jpg"  height="400" width="400" alt="photo-2">
+            </div>             
+        </div>
+        <div class="region">
+            <div class="region-image" onclick="zoomImage(this)">
+                <img src="images/photo-3.jpg"  height="400" width="400" alt="photo-3">
+            </div>        
+            <div class="region-content">
+                <h4 class="region-title moving-text">miniature splash</h4>
+                <p class="region-desc" id="rcorners1">
+                    The Colletta Atlanta Park presents a lively water park tableau, enhanced by a tilt-shift effect that lends the scene a toy-like appearance. 
+                    Two expansive, serpentine water slides—one in orange and the other boasting a multicolored rainbow design—twist their way into a brilliant azure pool. 
+                    The surrounding pool area is dotted with numerous lounge chairs, largely vacant, arrayed in orderly fashion beneath pristine white umbrellas. 
+                    Verdant foliage in the backdrop, along with a wooden edifice that likely serves as one of the park's facilities, adds to the relaxed, resort-like vibe of the setting. 
+                    The scene is bathed in sunlight, indicating a clear, sunny day—perfect for aquatic fun.
+                </p>
+            </div>
+        </div>
+        <div class="region">        
+            <div class="region-content">
+                <h4 class="region-title moving-text">playtime</h4>
+                <p class="region-desc" id="rcorners1">
+                    The picture captures a lively moment at a playground with children enjoying a bright yellow slide. 
+                    The top of the slide shows a queue of eager kids waiting their turn, with expressions of excitement. 
+                    At the bottom, a young girl is sliding down with her hands up in the air, a big smile on her face, indicating she's having a great time. 
+                    The playground equipment is colorful, and the setting appears to be outdoors with ample sunlight. 
+                    It's a snapshot of childhood joy and playfulness.
+                </p>
+            </div>          
+            <div class="region-image" onclick="zoomImage(this)">
+                <img src="images/photo-4.jpg"  height="400" width="400" alt="Edinburgh">
+            </div>                            
+        </div>
+    </section>
+    <footer>
+        <div class="sitemap">
+            
+            <h3 class="footer-header">Sitemap</h3>
+            <nav class="footer-nav">
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="index.html">Home</a></li>
+                    <li class="footer-li"><a href="shop.html">Shop</a></li>
+                    <li class="footer-li"><a href="cafe.html">Cafe</a></li>
+                    <li class="footer-li"><a href="park.html">Park</a></li>
+                    <li class="footer-li"><a href="contact.html">Contact</a></li>  
+                    <li class="footer-li"><a href="about.html">About</a></li>    
+                         
+                </ul>
+            </nav>            
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="contact">
+            <h3 class="footer-header">Colletta Atlanta</h3>
+            <p class="footer-text">22 Foothead Sheet</p>
+            <p class="footer-text">Glasgow</p>
+            <p class="footer-text">G21 0RE</p>
+            <p class="footer-text color padding bold">&copy; 2024 - Colletta Atlanta</p>
+        </div>
+    </footer>
+    <script>
+
+function zoomImage(element) {
+    // Get the source from the clicked image.
+    var imgSrc = element.getElementsByTagName('img')[0].src;
+    // Set the source for the zoomed image.
+    document.getElementById('zoomedImage').src = imgSrc;
+    // Show the zoom container.
+    document.getElementById('zoomContainer').style.display = 'flex';
+}
+
+function closeZoom() {
+    // Hide the zoom container.
+    document.getElementById('zoomContainer').style.display = 'none';
+    // Optionally clear the source of the zoomed image.
+    document.getElementById('zoomedImage').src = '';
+}
+    </script>
+</body>
+</html>
