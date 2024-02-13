@@ -843,6 +843,8 @@ h1.font-color {
       margin: 10px 0; /* Adjusts outer spacing to better fit narrow viewports */
       border-width: 2px; /* Optionally adjust the border thickness for a more subtle appearance */
       margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
   
