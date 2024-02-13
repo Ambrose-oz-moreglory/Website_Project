@@ -1195,7 +1195,7 @@ p, h1, h2, h3 {
         background-position: center;
         height: auto;
         padding: 20px 10px;
-        justify: center;
+        justify-content: center;
         
        
     }
@@ -1279,7 +1279,7 @@ p, h1, h2, h3 {
     .hero-section h1, .hero-section p {
         font-size: smaller; /* Adjust font size */
         text-align: center;
-        justify: center;
+        justify-content: center;
         word-wrap: break-word;
         
     }
