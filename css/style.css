@@ -1186,3 +1186,78 @@ p, h1, h2, h3 {
         margin: 20px 0; /* Adds space around images for clearer separation */
     }
 }
+
+
+/* media query responsive for park.html */
+@media only screen and (max-width: 768px) {
+    #regions {
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 20px 10px;
+        justify: center;
+        
+       
+    }
+
+    .region-header {
+        font-size: 34px; /* Adjusted font size for readability */
+        padding: 0 10px;
+        text-align: center; /* Centers header text */
+        width: 100%; /* Ensures full width utilization */
+        margin: 80px 0; /* Adds margin for spacing */
+        font-weight: bold;
+        
+        
+        
+        
+    }
+
+    .region-text, .region-text.garamond {
+        font-size: 16px; /* Adjusted font size for readability */
+        padding: 10px; /* Adds padding for spacing */
+        text-align: center; /* Centers paragraph text */
+        margin: 25px 0; /* Adds margin for top and bottom spacing */
+        display: block; /* Ensures elements are treated as block-level for proper centering */
+       
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 75%;
+        padding: 10px;
+        border-radius: 30px;
+        
+        
+    }
+
+
+     .region-text.garamond.moving-text {
+     
+     visibility: hidden;
+   
+   
+}
+
+
+    .region-text.garamond {
+        order: 3; /* Positions the garamond-styled text at the bottom */
+        color: #ffa500; /* Optional color adjustment for visibility */
+        font-weight: bold; /* Enhances text visibility */
+    }
+
+    .regions .region {
+        flex-direction: column;
+        align-items: center; /* Centers content horizontally */
+    }
+
+    .region-image, .region-content {
+        width: 100%; /* Utilizes full container width */
+        text-align: center; /* Centers content within these elements */
+        padding: 10px 0; /* Adds vertical padding for spacing */
+    }
+    
+    .region-image img {
+        max-width: 100%; /* Ensures images fit within their containers */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
