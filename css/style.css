@@ -1134,7 +1134,7 @@ p, h1, h2, h3 {
 
     .main-ul {
         display: flex;
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: row; /* Stack navigation items horizontally */
         align-items: center; /* Center-align the navigation items */
         width: 100%; /* Use full width to manage the items */
         padding: 0; /* Reset or adjust padding as needed */
