@@ -1151,3 +1151,38 @@ p, h1, h2, h3 {
       width: 100%; /* Ensure full width for easier touch */
   }
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjusts the main regions' header and text for smaller screens */
+    .region-header, .region-text, .region-text.garamond {
+        font-size: smaller; /* Reduce font size for smaller screens */
+        padding: 0 15px; /* Add padding for text not to touch the edges */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    /* Stacks region content and images vertically for readability */
+    .regions .region {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjusts the size of the region images to fit smaller screens */
+    .region-image img {
+        max-width: 90%; /* Reduce image width to fit the screen */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
+
+    /* Ensures descriptive text and titles within regions are clearly legible */
+    .region-desc, h4.region-title {
+        padding: 10px; /* Adds padding around text for better readability */
+        text-align: center; /* Centers the text */
+    }
+
+    /* Enhances visibility and focus on interactive elements */
+    .region-image {
+        cursor: pointer; /* Reinforces that images are clickable */
+        margin: 20px 0; /* Adds space around images for clearer separation */
+    }
+}
