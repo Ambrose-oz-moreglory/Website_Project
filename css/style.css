@@ -1019,22 +1019,3 @@ input[type="submit"]:hover {
     with a fallback to any available sans-serif font */
 }
 
-/* Responsive adjustments with media queries */
-@media screen and (max-width: 768px) {
-    .main-nav {
-        flex-direction: column;
-    }
-
-    .main-ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-li {
-        margin: 5px 0; /* Adjust for tighter vertical spacing */
-    }
-
-    .main-li a {
-        font-size: 14px; /* Optionally adjust font size for smaller screens */
-    }
-}
