@@ -1261,3 +1261,65 @@ p, h1, h2, h3 {
         height: auto; /* Maintains aspect ratio */
     }
 }
+
+
+/* media query responsive for index.html */
+@media only screen and (max-width: 768px) {
+
+.hero-section {
+	width: 90%; 
+     margin-top: -100px; /* Adjust the value as needed */
+     padding: 10px;
+     
+
+} 
+
+
+/* Adjust hero section text size and alignment */
+    .hero-section h1, .hero-section p {
+        font-size: smaller; /* Adjust font size */
+        text-align: center;
+        justify: center;
+        word-wrap: break-word;
+        
+    }
+    
+    .explore-button, .moving-text-1 {
+        margin-top: -10px; /* Smaller adjustment for mobile devices */
+        transform: translateY(-10px); /* Alternatively, use transform for mobile */
+        font-size: smaller;
+         margin-bottom: -10px;
+    }
+
+
+    
+    .business-hours-container {
+       
+        margin: 10px auto; /* Center the container on the page with some margin */
+        padding: 10px; /* Adjust padding for better spacing */
+        font-size: 0.9rem; /* Adjust the base font size for readability on smaller screens */
+        border-radius: 5px; /* Optionally adjust the border-radius for a softer look */
+         margin-top: -70px; /* Adjust the value as needed */
+           
+
+    }
+
+    .business-hours-container table {
+        font-size: 0.8rem; /* Adjust table font size for better readability */
+    }
+
+    .business-hours-container .alert {
+        font-size: 0.8rem; /* Adjust alert message font size */
+        padding: 5px; /* Adjust padding to ensure it's not too bulky */
+    }
+
+    .business-hours-container .header-1 h1 {
+        font-size: 1.2rem; /* Adjust the header font size to fit smaller screens */
+    }
+
+    /* Adjust the layout of table rows and cells for better visibility */
+    .business-hours-container table tr, .business-hours-container table td {
+        padding: 8px; /* Reduce padding for table rows and cells */
+    }
+}
+
