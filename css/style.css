@@ -1284,12 +1284,24 @@ p, h1, h2, h3 {
         
     }
     
-    .explore-button, .moving-text-1 {
-        margin-top: -10px; /* Smaller adjustment for mobile devices */
-        transform: translateY(-10px); /* Alternatively, use transform for mobile */
-        font-size: smaller;
-         margin-bottom: -10px;
-    }
+    .explore-button {
+
+
+          padding: 8px 15px; /* Smaller padding */
+          font-size: 14px; /* Smaller font size */
+          background-color: #28a745; /* Different background color */
+         
+    
+      }
+      
+      
+      
+      .moving-text-1 {
+          margin-top: -10px; /* Smaller adjustment for mobile devices */
+          transform: translateY(-10px); /* Alternatively, use transform for mobile */
+          font-size: smaller;
+           margin-bottom: -10px;
+      }
 
 
     
