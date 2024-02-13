@@ -1021,6 +1021,96 @@ input[type="submit"]:hover {
 
 
 
+
+
+
+/* General Styles for Small Screens */
+@media only screen and (max-width: 768px) {
+    body, html {
+        font-size: 14px; /* Smaller base font size */
+    }
+
+    .wordmark {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0.5rem; /* Adjust padding */
+        font-size: 1.5rem; /* Adjust wordmark size */
+    }
+
+    .main-nav {
+        width: 100%; /* Full width */
+        padding: 0.5rem 1rem; /* Adjust padding */
+    }
+
+    .main-ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .main-li {
+        padding: 0.5rem 0; /* Adjust padding */
+    }
+
+    .main-li a {
+        font-size: 1rem; /* Adjust link font size */
+    }
+
+    .cta, .explore-button {
+        font-size: 1rem; /* Adjust button text size */
+        padding: 0.25rem 0.8rem; /* Adjust button padding */
+    }
+
+    /* Adjust hero section for smaller screens */
+    .hero-section {
+        padding: 20px;
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+ /* Responsive Contact Form and Footer */
+
+@media only screen and (max-width: 768px) {
+    .contact_us {
+        flex-direction: column; /* Stack form and contact box vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    form, .cbox {
+        width: 100%; /* Full width for form and contact box */
+        margin: 0; /* Reset margins */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .sitemap, .social, .contact {
+        width: 100%; /* Full width for footer sections */
+        justify-content: center; /* Center content */
+        text-align: center; /* Center text */
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .social {
+        margin: 1rem 0; /* Add margin above and below for spacing */
+    }
+
+    .footer-nav, .footer-ul {
+        flex-direction: column; /* Stack footer links vertically */
+    }
+}
+
+/* Images and Text Adjustments */
+img {
+    max-width: 100%; /* Ensure images are not wider than their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+p, h1, h2, h3 {
+    word-wrap: break-word; /* Ensure text does not overflow its container */
+}
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
     header {
         display: flex;
